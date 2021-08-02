@@ -7,10 +7,11 @@
   }
 </script>
 
+<div class="min-h-screen bg-blue-200 text-center">
 
-<h1>Statpixel</h1>
+<h1 class="text-3xl p-5">Statpixel</h1>
 
-<form on:submit|preventDefault={redir}> 
+<form on:submit|preventDefault={redir} class="p-3"> 
   <input bind:value={ign} placeholder="Enter your IGN"> 
   <button type="submit">Go</button>
 </form>
@@ -31,6 +32,7 @@
   </p>
 </footer>
 
+</div>
 <!-- <style>
   :global(body) {
     font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console,
