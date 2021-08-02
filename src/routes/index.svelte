@@ -3,7 +3,7 @@
   let ign;
 
   function redir() {
-    goto(`https://25karma.xyz/player/${ign}`)
+    goto(`/players/${ign}`)
   }
 </script>
 
@@ -13,7 +13,7 @@
 
 <form on:submit|preventDefault={redir} class="p-3"> 
   <input bind:value={ign} placeholder="Enter your IGN"> 
-  <button type="submit">Go</button>
+  <button type="submit" class="border border-black">Go</button>
 </form>
 
 
