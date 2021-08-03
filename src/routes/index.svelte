@@ -7,12 +7,12 @@
   }
 </script>
 
-<div class="min-h-screen bg-blue-200 text-center">
+<div class="flex flex-col justify-center items-center min-h-screen bg-blue-200">
 
-<h1 class="text-3xl p-5">Statpixel</h1>
+<h1 class="text-3xl pb-5">Statpixel</h1>
 
 <form on:submit|preventDefault={redir} class="p-3"> 
-  <input bind:value={ign} placeholder="Enter your IGN"> 
+  <input bind:value={ign} placeholder="Enter your IGN" required> 
   <button type="submit" class="border border-black">Go</button>
 </form>
 
