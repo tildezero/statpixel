@@ -19,6 +19,19 @@
 
 <script>
   export let stats;
+  // import { Accordion, AccordionItem } from 'svelte-collapsible'
 </script>
+<div class="flex flex-col min-h-screen bg-blue-200">
 
-<p>{stats.username}'s UUID is {stats.uuid}</p>
+  <h1 class="mt-4 items-center text-center text-4xl">Stats for {stats.username}</h1>
+
+  <div class="p-3 items-center text-center">
+    <h2 class="text-3xl mb-5">Basic</h2>
+    <ul>
+      <li>UUID: {stats.uuid}</li>
+      <li>Rank: {stats.rank}</li>
+      <li>Karma: {Number(stats.karma).toLocaleString()}</li>
+    </ul>
+  </div>
+
+</div>
